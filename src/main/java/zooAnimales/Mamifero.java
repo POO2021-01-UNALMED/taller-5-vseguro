@@ -23,13 +23,13 @@ public class Mamifero extends Animal{
 		return listado.size();
 	}
 	
-	public static void crearCaballo(String nombre, int edad, String genero) {
+	public void crearCaballo(String nombre, int edad, String genero) {
 		pelaje=true;
 		patas=4;
-		setHabitat("pradera");
-        setNombre(nombre);
-		setEdad(edad);
-		setGenero(genero);
+		super.setHabitat("pradera");
+        super.setNombre(nombre);
+		super.setEdad(edad);
+		super.setGenero(genero);
 		caballos++;
 		
 	}
@@ -38,7 +38,6 @@ public class Mamifero extends Animal{
 		pelaje=true;
 		patas=4;
 		super.setHabitat("selva");
-		super.setHabitat("pradera");
         super.setNombre(nombre);
 		super.setEdad(edad);
 		super.setGenero(genero);

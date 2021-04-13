@@ -2,17 +2,12 @@ package zooAnimales;
 import gestion.*;
 
 public class Animal {
-	private  int totalAnimales;
+	private static int totalAnimales;
 	private String nombre;
-	private static int edad;
-	private  static String habitat;
-	private static String genero;
+	private int edad;
+	private String habitat;
+	private String genero;
 	private Zona zona;
-	
-	static {
-		int totalAnimales;
-		String nombre;
-	}
 	
     public Animal(String nombre, int edad, String habitat, String genero) {
 		//this.totalAnimales=totalAnimales;
@@ -60,32 +55,32 @@ public class Animal {
 		return nombre;
 	}
 
-	public static void setNombre(String nombre) {
-		Animal.nombre = nombre; 
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	public int getEdad() {
 		return edad;
 	}
 
-	public static void setEdad(int edad) {
-		Animal.edad = edad;
+	public void setEdad(int edad) {
+		this.edad = edad;
 	}
 
 	public String getHabitat() {
 		return habitat;
 	}
 
-	public static void setHabitat(String habitat) {
-		Animal.habitat = habitat;
+	public void setHabitat(String habitat) {
+		this.habitat = habitat;
 	}
 
 	public String getGenero() {
 		return genero;
 	}
 
-	public static void setGenero(String genero) {
-		Animal.genero = genero;
+	public void setGenero(String genero) {
+		this.genero = genero;
 	}
 
 	public Zona getZona() {
