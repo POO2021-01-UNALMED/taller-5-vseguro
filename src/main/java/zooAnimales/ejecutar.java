@@ -13,12 +13,12 @@ public class ejecutar {
 		//an1.crearCaballo("Pony", 3, "f");
 		Ave ave1 = new Ave();
 		//Zona zona = new Zona();
-	    Mamifero.crearCaballo("Pony", 3, "f");
+	   // Mamifero.crearCaballo("Pony", 3, "f");
 		//System.out.println(Mamifero.cantidadMamiferos());
 		//System.out.println(an1.getHabitat());
 		Anfibio an2 = new Anfibio("rana", 5, "pradera", "F","verde", false);
 		Zona zona = new Zona("dfgher",zoo );
-		zona.agregarAnimales(Mamifero.crearCaballo("jsd", 3, "m"));
+		//zona.agregarAnimales(Mamifero.crearCaballo("jsd", 3, "m"));
 		System.out.println(zona.cantidadAnimales());
 		//Mamifero.crearCaballo("Pony", 3, "f");
 	
