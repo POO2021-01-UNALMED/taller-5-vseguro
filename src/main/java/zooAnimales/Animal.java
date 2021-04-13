@@ -3,10 +3,10 @@ import gestion.*;
 
 public class Animal {
 	private static int totalAnimales;
-	private String nombre;
-	private int edad;
-	private String habitat;
-	private String genero;
+	private static String nombre;
+	private static int edad;
+	private  static String habitat;
+	private static String genero;
 	private Zona zona;
 	
     public Animal(String nombre, int edad, String habitat, String genero) {
@@ -28,9 +28,12 @@ public class Animal {
 
 	}
 	
-	public void totalPorTipo() {
-		System.out.println("Mamiferos: "+ Mamifero.cantidadMamiferos());
-		System.out.println("Aves: "+ Ave.cantidadAves());
+	public static String totalPorTipo() {
+		return ("Mamiferos: "+ Mamifero.cantidadMamiferos() + "\n"+
+		"Aves: "+ Ave.cantidadAves() + "\n"+
+		"Reptiles: " + Reptil.cantidadReptiles() + "\n" +
+		"Peces: " + Pez.cantidadPeces() + "\n" +
+		"Anfibios: " + Anfibio.cantidadAnfibios());
 
 	}
 	
@@ -52,32 +55,32 @@ public class Animal {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public static void setNombre(String nombre) {
+		Animal.nombre = nombre; 
 	}
 
 	public int getEdad() {
 		return edad;
 	}
 
-	public void setEdad(int edad) {
-		this.edad = edad;
+	public static void setEdad(int edad) {
+		Animal.edad = edad;
 	}
 
 	public String getHabitat() {
 		return habitat;
 	}
 
-	public void setHabitat(String habitat) {
-		this.habitat = habitat;
+	public static void setHabitat(String habitat) {
+		Animal.habitat = habitat;
 	}
 
 	public String getGenero() {
 		return genero;
 	}
 
-	public void setGenero(String genero) {
-		this.genero = genero;
+	public static void setGenero(String genero) {
+		Animal.genero = genero;
 	}
 
 	public Zona getZona() {

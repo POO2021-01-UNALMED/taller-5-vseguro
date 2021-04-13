@@ -3,26 +3,27 @@ import gestion.*;
 import java.util.ArrayList;
 
 public class Mamifero extends Animal{
-	private static ArrayList<Mamifero> listado;
+	private static ArrayList<Mamifero> listado = new ArrayList<Mamifero>();
 	public static int caballos;
 	public static int leones;
-	private boolean pelaje;
-	private int patas;
+	private static boolean pelaje;
+	private static int patas;
 	
 	public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje,int patas) {
-		super(nombre, edad, habitat,genero);
+		setNombre(nombre);
+		setEdad(edad);
+		setGenero(genero);
 		this.pelaje=pelaje;
 		this.patas=patas;
+		listado.add(this);
 	}
-	public Mamifero() {
-		super();
-	}
+	public Mamifero() {}
 	
 	public static int cantidadMamiferos() {
 		return listado.size();
 	}
 	
-	public void crearCaballo(String nombre, int edad, String genero) {
+	public static void crearCaballo(String nombre, int edad, String genero) {
 		pelaje=true;
 		patas=4;
 		setHabitat("pradera");
@@ -30,6 +31,7 @@ public class Mamifero extends Animal{
 		setEdad(edad);
 		setGenero(genero);
 		caballos++;
+		
 	}
 	
 	public void crearLeon(String nombre, int edad, String genero) {
