@@ -2,12 +2,17 @@ package zooAnimales;
 import gestion.*;
 
 public class Animal {
-	private static int totalAnimales;
-	private static String nombre;
+	private  int totalAnimales;
+	private String nombre;
 	private static int edad;
 	private  static String habitat;
 	private static String genero;
 	private Zona zona;
+	
+	static {
+		int totalAnimales;
+		String nombre;
+	}
 	
     public Animal(String nombre, int edad, String habitat, String genero) {
 		//this.totalAnimales=totalAnimales;
