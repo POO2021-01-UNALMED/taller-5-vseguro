@@ -10,9 +10,9 @@ public class Anfibio extends Animal{
 	private boolean venenoso;
 	
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel,boolean venenoso) {
-		setNombre(nombre);
-		setEdad(edad);
-		setGenero(genero);
+		super.setNombre(nombre);
+		super.setEdad(edad);
+		super.setGenero(genero);
 		this.colorPiel=colorPiel;
 		this.venenoso=venenoso;
 		

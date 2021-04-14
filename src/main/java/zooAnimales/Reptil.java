@@ -10,9 +10,9 @@ public class Reptil extends Animal{
 	private int largoCola;
 	
 	public Reptil(String nombre, int edad, String habitat, String genero,String colorEscamas, int largoCola) {
-		setNombre(nombre);
-		setEdad(edad);
-		setGenero(genero);
+		super.setNombre(nombre);
+		super.setEdad(edad);
+		super.setGenero(genero);
 		this.colorEscamas=colorEscamas;
 		this.largoCola=largoCola;	
 	}

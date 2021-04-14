@@ -5,12 +5,11 @@ import zooAnimales.*;
 public class Zoologico {
 	private String nombre;
 	private String ubicacion;
-	private ArrayList<Zona> zona=new ArrayList<Zona>();
+	private static ArrayList<Zona> zona=new ArrayList<Zona>();
 	
 	public Zoologico(String nombre,String ubicacion) {
 		this.nombre=nombre;
 		this.ubicacion=ubicacion;
-		//this.zonas=zonas;
 	}
 	
 	public Zoologico() {} 
@@ -38,8 +37,8 @@ public class Zoologico {
 		this.ubicacion = ubicacion;
 	}
 
-	public ArrayList<Zona> getZona() {
-		return zona;
+	public static ArrayList<Zona> getZona() {
+		return Zoologico.zona;
 	}
 
 	public void setZona(ArrayList<Zona> zona) {

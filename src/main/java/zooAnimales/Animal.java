@@ -17,6 +17,15 @@ public class Animal {
 		totalAnimales++;
 	}
 	
+    /*public Animal(String nombre, int edad, String habitat, String genero,Zona zona) {
+		this.nombre=nombre;
+		this.edad=edad;
+		this.habitat=habitat;
+		this.genero=genero;
+		totalAnimales++;
+		zona.add(Animal);
+		*/
+	
     public Animal() {
     	totalAnimales++;
     }

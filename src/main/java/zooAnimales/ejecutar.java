@@ -36,6 +36,7 @@ public class ejecutar {
 		Reptil.crearIguana("test", 11, "M");
 		Pez.crearBacalao("test", 11, "M");
 		System.out.println(zoo.cantidadTotalAnimales());
+		
 
 
 
