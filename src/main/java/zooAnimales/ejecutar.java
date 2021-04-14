@@ -35,13 +35,28 @@ public class ejecutar {
 		Anfibio.crearRana("test", 11, "M");
 		Reptil.crearIguana("test", 11, "M");
 		Pez.crearBacalao("test", 11, "M");
-		System.out.println(zoo.cantidadTotalAnimales());*/
+		System.out.println(zoo.cantidadTotalAnimales());
 		Ave an2 = new Ave("paloma", 5, "ciudad", "F", "gris");
 		boolean ok = false;
 		String  comp = "Mi nombre es paloma, tengo una edad de 5, habito en ciudad y mi genero es F";
 		System.out.println(an2.toString().equals(comp));
-		System.out.println(an2.toString());
-		
+		System.out.println(an2.toString());*/
+		new Anfibio();
+		new Anfibio();
+		new Mamifero();
+		new Mamifero();
+		new Mamifero();
+		new Reptil();
+		new Pez();
+		new Ave();
+		new Ave();
+		boolean ok = false;
+		String  comp = "Mamiferos: 4\n" + 
+				"Aves: 4\n" + 
+				"Reptiles: 2\n" + 
+				"Peces: 2\n" + 
+				"Anfibios: 3";
+		System.out.println(Animal.totalPorTipo());
 
 
 

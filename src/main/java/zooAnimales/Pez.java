@@ -8,6 +8,7 @@ public class Pez extends Animal{
 	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
+	public static int peces;
 	
 	public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas) {
 		super.setNombre(nombre);
@@ -18,10 +19,12 @@ public class Pez extends Animal{
 		this.cantidadAletas=cantidadAletas;	
 		listado.add(this);
 	}
-	public Pez() {}
+	public Pez() {
+		peces++;
+	}
 	
 	public static int cantidadPeces() {
-		return listado.size();
+		return listado.size()+ peces;
 	}
 	@Override
 	public String movimiento() {

@@ -8,6 +8,7 @@ public class Reptil extends Animal{
 	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
+	public static int reptiles;
 	
 	public Reptil(String nombre, int edad, String habitat, String genero,String colorEscamas, int largoCola) {
 		super.setNombre(nombre);
@@ -17,12 +18,15 @@ public class Reptil extends Animal{
 		this.colorEscamas=colorEscamas;
 		this.largoCola=largoCola;
 		listado.add(this);
+		
 	}
 	
-	public Reptil() {}
+	public Reptil() {
+		reptiles++;
+	}
 	
 	public static int cantidadReptiles() {
-		return listado.size();
+		return listado.size()+reptiles;
 	}
 	@Override
 	public String movimiento() {
