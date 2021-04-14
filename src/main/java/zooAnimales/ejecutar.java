@@ -36,7 +36,10 @@ public class ejecutar {
 		Reptil.crearIguana("test", 11, "M");
 		Pez.crearBacalao("test", 11, "M");
 		System.out.println(zoo.cantidadTotalAnimales());
-		
+		Ave an2 = new Ave("paloma", 5, "ciudad", "F", "gris");
+		boolean ok = false;
+		String  comp = "Mi nombre es paloma, tengo una edad de 5, habito en ciudad y mi genero es F";
+		System.out.println(an2);
 
 
 

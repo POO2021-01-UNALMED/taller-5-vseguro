@@ -45,7 +45,7 @@ public class Animal {
 	
 	public String toString() {
 		String resultado = "Mi nombre es " + nombre + ", tengo una edad " + edad + 
-				"habito en " + habitat + "y mi genero es"+ genero;
+				", habito en " + habitat + " y mi genero es " + genero;
 		if (zona!=null) {
 			resultado += ", la zona en la que me ubico es " + zona + "en el"+ Zona.getZoo();
 		}
