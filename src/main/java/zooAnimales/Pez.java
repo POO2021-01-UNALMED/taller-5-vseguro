@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Pez extends Animal{
 	private static ArrayList<Pez> listado=new ArrayList<Pez>();
-	public int salmones;
-	public int bacalaos;
+	public static int salmones;
+	public static int bacalaos;
 	private String colorEscamas;
 	private int cantidadAletas;
 	
@@ -14,39 +14,28 @@ public class Pez extends Animal{
 		setEdad(edad);
 		setGenero(genero);
 		this.colorEscamas=colorEscamas;
-		this.cantidadAletas=cantidadAletas;
-		
-		
+		this.cantidadAletas=cantidadAletas;	
 	}
 	public Pez() {}
 	
 	public static int cantidadPeces() {
 		return listado.size();
 	}
-
+	@Override
 	public String movimiento() {
 		return "nadar";
 	}
-
-	public void crearSalmon(String nombre, int edad, String genero) {
-		colorEscamas="rojo";
-		cantidadAletas=6;
-		setHabitat("oceano");
-		setNombre(nombre);
-		setEdad(edad);
-		setGenero(genero);
-		salmones++;
 	
+	public static Animal crearSalmon(String nombre, int edad, String genero) {
+		Pez pez1=new Pez(nombre,edad,"oceano",genero,"rojo",6);
+		salmones++;
+		return pez1;
 	}
 
-	public void crearBacalao(String nombre, int edad, String genero) {
-		colorEscamas="gris";
-		cantidadAletas=6;
-		setHabitat("oceano");
-		setNombre(nombre);
-		setEdad(edad);
-		setGenero(genero);
+	public static Animal crearBacalao(String nombre, int edad, String genero) {
+		Pez pez1=new Pez(nombre,edad,"oceano",genero,"gris",6);
 		bacalaos++;
+		return pez1;
 	}
 
 	public ArrayList<Pez> getListado() {

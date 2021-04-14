@@ -10,12 +10,10 @@ public class Animal {
 	private Zona zona;
 	
     public Animal(String nombre, int edad, String habitat, String genero) {
-		//this.totalAnimales=totalAnimales;
 		this.nombre=nombre;
 		this.edad=edad;
 		this.habitat=habitat;
 		this.genero=genero;
-		//this.zona=zona;
 		totalAnimales++;
 	}
 	
@@ -25,7 +23,6 @@ public class Animal {
     
 	public String movimiento() {
 		return "desplazarse";
-
 	}
 	
 	public static String totalPorTipo() {

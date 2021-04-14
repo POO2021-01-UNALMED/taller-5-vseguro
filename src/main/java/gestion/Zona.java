@@ -14,7 +14,7 @@ public class Zona {
 	}
 	public Zona() {}
 	
-	public static void agregarAnimales(Animal animal) {
+	public void agregarAnimales(Animal animal) {
 		animales.add(animal);		
 	}
 	
