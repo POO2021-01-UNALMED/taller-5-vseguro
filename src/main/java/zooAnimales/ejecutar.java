@@ -11,7 +11,7 @@ public class ejecutar {
 		System.out.println(an1.getPatas());
 		Mamifero.crearCaballo("Pony",5,"f");
 		System.out.println(an1.getNombre());*/
-		Zoologico zoo = new Zoologico();
+		/*Zoologico zoo = new Zoologico();
 
 		Zona z1 = new Zona();
 		Zona z2 = new Zona();
@@ -35,12 +35,13 @@ public class ejecutar {
 		Anfibio.crearRana("test", 11, "M");
 		Reptil.crearIguana("test", 11, "M");
 		Pez.crearBacalao("test", 11, "M");
-		System.out.println(zoo.cantidadTotalAnimales());
+		System.out.println(zoo.cantidadTotalAnimales());*/
 		Ave an2 = new Ave("paloma", 5, "ciudad", "F", "gris");
 		boolean ok = false;
 		String  comp = "Mi nombre es paloma, tengo una edad de 5, habito en ciudad y mi genero es F";
-		System.out.println(an2);
-
+		System.out.println(an2.toString().equals(comp));
+		System.out.println(an2.toString());
+		
 
 
 
