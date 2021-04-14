@@ -12,9 +12,11 @@ public class Anfibio extends Animal{
 	public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel,boolean venenoso) {
 		super.setNombre(nombre);
 		super.setEdad(edad);
+		super.setHabitat(habitat);
 		super.setGenero(genero);
 		this.colorPiel=colorPiel;
 		this.venenoso=venenoso;
+		listado.add(this);
 		
 	}
 	public Anfibio() {}
